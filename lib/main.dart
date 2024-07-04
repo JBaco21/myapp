@@ -67,6 +67,26 @@ class _MyHomePageState extends State<MyHomePage> {
                 'Solo tú puedes ver la configuración. También puedes revisar la configuración de Maps, la Búsqueda o cualquier servicio de Google que uses con frecuencia. Google protege la privacidad y la seguridad de tus datos.',
                 style: TextStyle(fontSize: 14.0),
               ),
+              const SizedBox(height: 16.0),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  const Text(
+                    'Más información',
+                    style: TextStyle(
+                      fontSize: 14.0,
+                      color: Colors.blue,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                  const SizedBox(width: 8.0),
+                  Icon(
+                    Icons.security, // Usar un icono de Google similar
+                    size: 24.0,
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
             ],
           ),
         ),
@@ -146,9 +166,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           Text(
             '¿Buscas otra información?',
             style: TextStyle(
