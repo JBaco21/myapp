@@ -68,10 +68,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(fontSize: 14.0),
               ),
               const SizedBox(height: 16.0),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  const Text(
+                  Text(
                     'Más información',
                     style: TextStyle(
                       fontSize: 14.0,
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: TextDecoration.underline,
                     ),
                   ),
-                  const SizedBox(width: 8.0),
+                  SizedBox(width: 8.0),
                   Icon(
                     Icons.security, // Usar un icono de Google similar
                     size: 24.0,
